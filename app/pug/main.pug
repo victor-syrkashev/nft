@@ -1,0 +1,31 @@
+-
+  var cardsData = [
+    {
+      img: './images/grinning-face.svg',
+      text: 'Откроешь свой первый криптокошелек и научишься с ним работать',
+    },
+    {
+      img: './images/face-with-tongue.svg',
+      text: 'Поймёшь, как выбирать правильные дропы',
+    },
+    {
+      img: './images/money-mouth-face.svg',
+      text: 'Построишь план по быстрому приумножению заработанных средств',
+    },
+    {
+      img: './images/face-with-sunglasses.svg',
+      text: 'Узнаешь кто такие холдеры и флипперы',
+    },
+  ];
+
+main.main 
+  div.main__background
+    div.main__background-out
+      img.main__background-out-ellipse(src='./images/ellipse-violet.svg')
+  div.main__container
+    h2.main__container-title Что даст тебе обучение?
+    ul.main__container-list 
+      each value in cardsData 
+        li.main__container-list-card
+          img.main__content-list-card-img(src=value.img)
+          p.main__content-list-card-text #{value.text}

@@ -302,9 +302,10 @@ button {
 .main {
   margin: 0 auto;
   max-width: 80rem;
-  margin-top: 12rem;
+  padding-top: 12rem;
   margin-bottom: 5.5rem;
   position: relative;
+  overflow: hidden;
   .main__background {
     position: absolute;
     width: 100%;
